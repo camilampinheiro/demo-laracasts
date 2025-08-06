@@ -1,6 +1,10 @@
 <?php
 
-// Connect to the database, and execute a query.
+namespace Core;
+
+use PDO;
+
+// Database class to handle database connections and queries using PDO.
 class Database {
   public $connection;
   public $statement;

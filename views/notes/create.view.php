@@ -1,6 +1,6 @@
-<?php require('views/partials/head.php'); ?>
-<?php require('views/partials/nav.php'); ?>
-<?php require('views/partials/banner.php'); ?>
+<?php require base_path ('views/partials/head.php'); ?>
+<?php require base_path ('views/partials/nav.php'); ?>
+<?php require base_path ('views/partials/banner.php'); ?>
 
 <main>
   <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
@@ -11,7 +11,11 @@
             <div class="col-span-full">
               <label for="about" class="block text-sm/6 font-medium text-gray-900">Note</label>
               <div class="mt-2">
-                <textarea id="about" name="about" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"></textarea>
+                <textarea id="body" name="body" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"><?= $_POST['body'] ?? '' ?></textarea>
+
+                <?php if (isset($errors['body'])): ?>
+                  <p class="mt-2 text-xs text-red-600"><?= $errors['body']; ?></p>
+                <?php endif; ?>
               </div>
             </div>
           </div>
@@ -26,4 +30,4 @@
   </div>
 </main>
 
-<?php require('views/partials/footer.php'); ?>
+<?php require base_path('views/partials/footer.php'); ?>
