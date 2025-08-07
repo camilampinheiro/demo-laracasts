@@ -28,4 +28,3 @@ header('location: /notes');
 die();
 
 
-?>

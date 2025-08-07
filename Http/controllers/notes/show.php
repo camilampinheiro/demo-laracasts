@@ -21,5 +21,5 @@ view("notes/show.view.php", [
   'note' => $note,
 ]);
 
-?>
+
 

@@ -22,4 +22,3 @@ class Middleware {
     (new $middleware)->handle();
   }
 }
-?>

@@ -2,4 +2,3 @@
 
 view('registration/create.view.php');
 
-?>

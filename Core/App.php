@@ -21,5 +21,3 @@ class App {
     return static::container()->resolve($key);
   }
 }
-
-?>

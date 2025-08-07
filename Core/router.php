@@ -44,12 +44,14 @@ class Router {
     return $this;
   }
 
+  // Resolve the route based on the URI and method
+  // and execute the corresponding controller
   public function route($uri, $method) {
     foreach ($this->routes as $route) {
       if ($route['uri'] === $uri && $route['method'] === strtoupper($method)) {
         Middleware::resolve($route['middleware']);
 
-        return require base_path($route['controller']);
+        return require base_path('Http/controllers/' . $route['controller']);
       }
     }
     $this->abort();
@@ -62,4 +64,3 @@ class Router {
   }
 }
 
-?>

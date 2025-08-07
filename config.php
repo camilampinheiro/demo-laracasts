@@ -7,5 +7,4 @@ return [
     'dbname' => 'myapp',
     'charset' => 'utf8mb4'
   ],
-]
-?>
+];
