@@ -23,7 +23,7 @@
       </div>
 
       <div class="mt-6 flex items-center justify-end gap-x-6">
-        <button type="submit" class="rounded-md bg-[#1C242D] px-6 py-2 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2">Save</button>
+        <button type="submit" class="rounded-md bg-[#1C242D] px-6 py-2 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 cursor-pointer">Save</button>
       </div>
     </form>
 

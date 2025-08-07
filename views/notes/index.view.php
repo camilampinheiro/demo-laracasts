@@ -15,7 +15,7 @@
     </ul>
 
     <p class="text-white mt-10">
-      <a href="/notes/create" class="bg-[#1C242D] p-4 text-center rounded-md hover:bg-gray-700">Create Note</a>
+      <a href="/notes/create" class="rounded-md bg-[#1C242D] px-6 py-2 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 ">Create Note</a>
     </p>
   </div>
 </main>

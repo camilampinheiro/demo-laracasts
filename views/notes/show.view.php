@@ -4,13 +4,10 @@
 
 <main>
   <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-    <!-- <p class="mb-6 bg-[#1C242D] py-3 text-white mt-6 w-1/9 text-center rounded-md hover:bg-gray-700">
-      <a href="/notes">go back...</a>
-    </p> -->
     <p class="mt-6"><?= htmlspecialchars($note['body']); ?></p>
 
     <footer class="mt-12">
-      <a href="/note/edit?id=<?= $note['id'];?>" class="bg-blue-600 px-4 py-3 text-white text-center rounded-md hover:bg-blue-700 cursor-pointer">
+      <a href="/note/edit?id=<?= $note['id'];?>" class="rounded-md bg-[#1C242D] px-6 py-2 text-sm font-semibold text-white shadow-xs hover:bg-gray-700">
         Edit
       </a>
     </footer>
