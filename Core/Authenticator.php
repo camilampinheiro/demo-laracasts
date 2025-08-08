@@ -23,7 +23,7 @@ class Authenticator {
   }
 
   // log in the user 
-  public function login($user) {
+  public static function login($user) {
     $_SESSION['user'] = [
       'email' => $user['email'],
     ];
@@ -32,7 +32,7 @@ class Authenticator {
   }
 
   // log out the user
-  public function logout() {
+  public static function logout() {
     Session::destroy();
   }
 }

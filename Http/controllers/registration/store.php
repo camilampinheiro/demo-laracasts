@@ -2,6 +2,7 @@
 
 use Core\Validator;
 use Core\App;
+use Core\Authenticator;
 use Core\Database;
 
 $db = App::resolve(Database::class);
@@ -43,7 +44,7 @@ if ($user) {
   ]);
 
   // mark that user has logged in
-  login($user);
+  Authenticator::login($user);
   
   header('location: /');
   exit();
